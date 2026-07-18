@@ -1,0 +1,159 @@
+
+.about{
+    width:min(1200px,90%);
+    margin:120px auto;
+}
+
+.section-title{
+    font-size:3rem;
+    margin-bottom:60px;
+}
+
+.about-content{
+    max-width:750px;
+    display:flex;
+    flex-direction:column;
+    gap:24px;
+    margin-bottom:60px;
+}
+
+.about-content p{
+    line-height:1.8;
+    color:var(--text-secondary);
+}
+
+.about-cards{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+    margin-bottom: 32px;
+}
+
+.card{
+    padding:28px;
+    border-radius:18px;
+    background:var(--surface);
+    border:1px solid var(--border);
+    transition:0.3s;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    border-color:var(--primary);
+}
+
+.card-icon{
+    font-size:2rem;
+    color:var(--primary);
+}
+
+.card h3{
+    font-size:1.1rem;
+}
+
+.card p{
+    color:var(--text-secondary);
+}
+
+.about-cards a{
+    grid-column: span 2;
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.story-link{
+    text-decoration:none;
+    color:var(--primary);
+    font-weight:600;
+    transition:0.3s;
+    width: 150px;
+}
+
+.story-link:hover{
+    opacity:.8;
+}
+
+@media (max-width: 992px){
+
+    .about{
+        margin:100px auto;
+    }
+
+    .section-title{
+        font-size:2.5rem;
+        margin-bottom:50px;
+    }
+
+    .about-content{
+        max-width:100%;
+    }
+
+    .about-cards{
+        gap:16px;
+    }
+
+    .card{
+        padding:24px;
+    }
+
+}
+
+@media (max-width: 768px){
+
+    .about{
+        width:90%;
+        margin:80px auto;
+    }
+
+    .section-title{
+        font-size:2rem;
+        text-align:center;
+        margin-bottom:40px;
+    }
+
+    .about-content{
+        gap:20px;
+        margin-bottom:40px;
+    }
+
+    .about-content p{
+        font-size:0.95rem;
+        text-align:center;
+    }
+
+    .about-cards{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    .card{
+        padding:22px;
+    }
+
+    .card-icon{
+        font-size:1.8rem;
+    }
+
+    .card h3{
+        font-size:1rem;
+    }
+
+    .card p{
+        font-size:0.95rem;
+    }
+
+    .about-cards a{
+        grid-column:auto;
+        justify-self:center;
+    }
+
+    .story-link{
+        width:auto;
+        align-self:center;
+    }
+
+}

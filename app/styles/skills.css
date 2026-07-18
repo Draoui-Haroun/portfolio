@@ -1,0 +1,151 @@
+
+.skills{
+    width:100%;
+    padding:100px 10%;
+    background:#111827;
+}
+
+.section-description{
+    text-align:center;
+    color:#9CA3AF;
+    font-size:1.1rem;
+    max-width:650px;
+    margin:20px auto 60px;
+    line-height:1.7;
+}
+
+.skills-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:35px;
+}
+
+.skills-card{
+    background:linear-gradient(145deg,#1F2937,#111827);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:20px;
+    padding:35px;
+    transition:.4s;
+    position:relative;
+    overflow:hidden;
+}
+
+.skills-card::before{
+    content:"";
+    position:absolute;
+    top:-100%;
+    left:-100%;
+    width:250px;
+    height:250px;
+    background:rgba(96,165,250,.08);
+    border-radius:50%;
+    transition:.6s;
+    z-index: 0;
+}
+
+.skills-card:hover::before{
+    top:-60px;
+    left:-60px;
+}
+
+.skills-card h3{
+    color:white;
+    font-size:1.4rem;
+    margin-bottom:25px;
+}
+
+.skill-list{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.skill{
+    background:#111827;
+    border:1px solid #374151;
+    color:#E5E7EB;
+    padding:10px 18px;
+    border-radius:999px;
+    font-weight:500;
+    transition:.3s;
+    z-index: 10;
+}
+
+.skill:hover{
+    background:#2563EB;
+    border-color:#2563EB;
+    color:white;
+    transform:translateY(-4px) scale(1.05);
+    box-shadow:0 8px 20px rgba(37,99,235,.35);
+}
+
+.skills-card h3{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color:white;
+    font-size:1.4rem;
+    margin-bottom:25px;
+}
+
+.skills-card h3 svg{
+    color:#60A5FA;
+    font-size:1.3rem;
+}
+
+@media (max-width: 992px){
+
+    .skills{
+        padding:80px 6%;
+    }
+
+    .skills-container{
+        gap:25px;
+    }
+
+    .skills-card{
+        padding:30px;
+    }
+
+    .skills-card h3{
+        font-size:1.3rem;
+    }
+
+}
+
+@media (max-width: 768px){
+
+    .skills{
+        padding:70px 5%;
+    }
+
+    .section-description{
+        font-size:1rem;
+        margin-bottom:45px;
+    }
+
+    .skills-container{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    .skills-card{
+        padding:24px;
+    }
+
+    .skills-card h3{
+        font-size:1.2rem;
+        justify-content:center;
+    }
+
+    .skill-list{
+        justify-content:center;
+        gap:12px;
+    }
+
+    .skill{
+        padding:9px 16px;
+        font-size:0.9rem;
+    }
+
+}
