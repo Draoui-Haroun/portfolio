@@ -35,9 +35,11 @@ export default function Contact() {
             setLoading(false);
 
         } catch (error) {
+            console.log(error)
             toast.error("Failed to send message.");
-            setLoading(false);
+            
         }
+        setLoading(false);
 
     };
 
