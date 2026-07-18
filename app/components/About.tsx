@@ -1,6 +1,7 @@
 
 import "../styles/about.css";
 import { FaLocationDot, FaGraduationCap, FaCode, FaRocket } from "react-icons/fa6";
+import Journey from "../journey/page";
 
 export default function About() {
 
