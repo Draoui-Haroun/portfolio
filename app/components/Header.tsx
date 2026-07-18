@@ -81,7 +81,7 @@ export default function Header() {
                 >Contact</a>
             </nav>
 
-            <a href="/cv.pdf" download className="resume-btn" >Resume</a>
+            <a href="/cv/Draoui CV.pdf" download className="resume-btn" >Resume</a>
 
             <button
                 className="menu-btn"
