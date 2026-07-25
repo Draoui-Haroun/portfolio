@@ -4,6 +4,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "react-hot-toast";
+import { ThemeProvider } from "./context/ThemeContext";
+import ThemeWrapper from "./components/ThemeWrapper";
 
 
 const inter = Inter({
@@ -92,7 +94,10 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className={inter.className}>
-          {children}
+          <ThemeProvider>
+            <ThemeWrapper/>
+            {children}
+          </ThemeProvider>
           <Toaster position="bottom-right" toastOptions={{duration: 2000,}} />
       </body>
     </html>

@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Hero() {
 
     return(
-        <section className="hero">
+        <section id="home" className="hero">
 
             <div className="hero-content">
                 <h2>Hello ,I'm</h2>

@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "../styles/header.css";
+import ThemeToggle from "./ThemeToggle";
 
 
 export default function Header() {
@@ -46,6 +47,7 @@ export default function Header() {
 
         window.addEventListener("scroll", handleScroll);
         handleScroll();
+
         return () =>
             window.removeEventListener("scroll", handleScroll);
 
@@ -81,7 +83,10 @@ export default function Header() {
                 >Contact</a>
             </nav>
 
-            <a href="/cv/Draoui CV.pdf" download className="resume-btn" >Resume</a>
+            <div className="header-actions">
+                <ThemeToggle />
+                <a href="/cv/Draoui CV.pdf" download className="resume-btn" >Resume</a>
+            </div>
 
             <button
                 className="menu-btn"
