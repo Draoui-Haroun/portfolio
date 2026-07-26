@@ -1,6 +1,7 @@
 
 import Link from "next/link";
 import "./journey.css"
+import { FiExternalLink } from "react-icons/fi";
 
 
 export default function Journey() {
@@ -94,38 +95,44 @@ export default function Journey() {
                 </p>
             </div>
 
-            <div className="chapter">
-                <h2>chapter 5: Today</h2>
-                <h3>Where I Am Today</h3>
-                <p>
-                    Today, I am a Frontend Developer with a strong foundation in modern web
-                    technologies. Alongside my Mechanical Engineering studies, I continue to
-                    improve my programming skills by building practical projects, exploring
-                    new technologies, and applying best practices in web development.
-                </p>
-                <h3>What I've Learned</h3>
-                <p>
-                   Throughout this journey, I learned that consistent practice is the fastest way
-                    to improve. Discipline is more valuable than motivation because it keeps me
-                    moving forward even when progress feels slow. I also developed strong
-                    problem-solving skills by breaking complex challenges into smaller, manageable
-                    steps and finding logical solutions. I discovered that challenges and difficult
-                    moments are part of the learning process—sometimes, the pain is the progress.
-                    Every obstacle became an opportunity to learn, improve, and become a better
-                    developer. 
-                </p>
-            </div>
+            <div className="assessment-card">
 
-            <div className="chapter">
-                <h2>chapter 6: What's Next</h2>
-                <h3>Real-World Projects & Career Goals</h3>
-                <p>
-                    My next goal is to gain professional experience through internships and
-                    real-world projects where I can collaborate with experienced developers,
-                    contribute to meaningful products, and continue expanding my technical
-                    knowledge. I aim to become a skilled Frontend Developer while gradually
-                    learning backend technologies to grow into a well-rounded software engineer.
-                </p>
+                <h4>Assessment Results</h4>
+
+                <div className="assessment-grid">
+
+                    <div className="assessment-item">
+                        <h5>🚀 Motivated</h5>
+                        <p>I enjoy setting goals and consistently working toward them.</p>
+                    </div>
+
+                    <div className="assessment-item">
+                        <h5>💪 Assertive</h5>
+                        <p>I take initiative and feel comfortable making decisions.</p>
+                    </div>
+
+                    <div className="assessment-item">
+                        <h5>🤝 Extroverted</h5>
+                        <p>I enjoy collaborating and communicating with teammates.</p>
+                    </div>
+
+                    <div className="assessment-item">
+                        <h5>🏆 Competitive</h5>
+                        <p>I continuously challenge myself to improve my skills and deliver better results.</p>
+                    </div>
+
+                </div>
+
+                <a
+                    href="/professional-assessment/professional-assessment.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="assessment-btn"
+                >
+                    View Assessment Report 
+                    <FiExternalLink/>
+                </a>
+
             </div>
 
             <div className="journey-footer" >
